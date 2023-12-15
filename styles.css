@@ -1,0 +1,111 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.open-button2 {
+  background-color: #33D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 123px;
+  right: 128px;
+  width: 280px;
+}
+
+.open-button3 {
+  background-color: #33D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 123px;
+  left: 128px;
+  width: 280px;
+}
+
+.poisk {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.priem {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+.otgrus {
+  position: fixed;
+  bottom: 0px;
+  left: 250px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+}
+
+.form-popup1 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 60px;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+
+.tab {
+  display: none;
+}
