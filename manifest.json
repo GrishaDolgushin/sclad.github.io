@@ -10,6 +10,7 @@
       "src": "./log.png",
       "sizes": "800x800",
       "type": "image/png"
+      "purpose": "any maskable"
     }
   ]
 }
