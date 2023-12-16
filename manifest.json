@@ -3,12 +3,12 @@
 "short_name": "Sclad",
 "start_url": ".",
 "background_color": "#6dcdb1",
-"theme_color": "#009578"
-"display": "standalon"
+"theme_color": "#009578",
+"display": "standalon",
 "icons": [
     {
-      "src": "./log.jpg"
-      "sizes": "800x800"
+      "src": "./log.jpg",
+      "sizes": "800x800",
       "type": "image/jpg"
     }
   ]
