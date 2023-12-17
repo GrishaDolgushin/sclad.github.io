@@ -393,7 +393,7 @@ cx.addEventListener("click", async (ev) => {
 ay.addEventListener("click", async (ev) => {
 	// отменяем действие по умолчанию
         ev.preventDefault();
-
+alert("раз");
 		var ba = document.querySelector("[name=ba]");
 		ba = ba.value.trim();
 
@@ -413,7 +413,7 @@ ay.addEventListener("click", async (ev) => {
 		bg = bg.value.trim();
 
         let details = {ba, bb, bc, bd, bf, bg, q};
-
+alert("два");
         // подготавливаем данные для отправки
         let formBody = [];
         for (let property in details) {
