@@ -12,8 +12,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 225px;
+  bottom: 123px;
   left: 28px;
+  right: 128px;
   width: 280px;
 }
 
@@ -27,8 +28,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  bottom: 123px;
-  right: 128px;
+  top: 225px;
+  left: 28px;
   width: 250px;
   transform: rotate(90deg);
 }
