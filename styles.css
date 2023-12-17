@@ -36,13 +36,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: black;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 2px;
+  padding: 6px 10px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
   top: 15px;
-  left: 128px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   width: 280px;
 }
 
