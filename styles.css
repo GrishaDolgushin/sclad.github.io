@@ -47,17 +47,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .poisk {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  top: 0px;
+  right: 0px;
 }
 
 .priem {
   position: absolute;
   top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 
 .otgrus {
   position: absolute;
