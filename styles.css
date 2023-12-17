@@ -12,8 +12,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  bottom: 23px;
-  right: 28px;
+  top: 225px;
+  left: 28px;
   width: 280px;
 }
 
