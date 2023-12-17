@@ -68,6 +68,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   left: 50px;
 }
 
+.1Yar {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .form-popup {
   display: none;
   position: fixed;
