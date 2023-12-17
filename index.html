@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="./knopk1.js"> </script>
+	<script src="./knopk2.js"> </script>
+	<script src="./knopk3.js"> </script>
+	<script src="./pars1.js"> </script>
+	<script src="./pars2.js"> </script>
+	<script src="./pars3.js"> </script>
+	<script src="./pars1-1.js"> </script>
+	<script src="./pars2-1.js"> </script>
+	<script src="./pars3-1.js"> </script>
+	<script src="./poisk.js"> </script>
+	<script src="./knopkpoisk.js"> </script>
+  </head>
+  <body>
+	<button class="poisk" onclick="openForm3()">
+		<div> Поиск </div>
+	</button>
+	<div class="form-popup" id="myForm2">
+		<form action="#" class="form-container" id="form" method="post">
+			<input type="text" id="text-to-find" value="">
+			<input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
+		</form>
+	</div>
+	<button class="open-button" onclick="openForm1()" id='kn1'>
+		<div class="div1" id='el1'> </div>
+	</button>
+
+	<button class="open-button2" onclick="openForm2()" id='kn2'>
+		<div class="div2" id='el2'> </div>
+	</button>
+
+	<button class="priem" onclick="openForm4()" id='kn3'>Добавить палет</button>
+
+	<button class="otgrus" onclick="openForm4()" id='kn4'>Добавить заказ</button>
+
+<button class="open-button3 id='kn2'>
+		<div class="div2" id='el3'> </div>
+	</button>
+
+	<div class="form-popup" id="myForm3">
+		<form action="#" class="form-container" id="form" method="post">
+
+			<label>Рада New верт 600 white </label>
+			<input type="text" name="ba">
+
+			<label>Рада New верт 700 white </label>
+			<input type="text" name="bb">
+
+			<label>Рада New верт 800 white </label>
+			<input type="text" name="bc">
+
+			<button type="button" id='ay'>Добавить</button>
+		</form>
+		</div>
+
+
+	<div class="form-popup" id="myForm1">
+	    <form action="#" class="form-container" id="form" method="post">
+		<div class ="tab">
+
+			<div id="div1">
+	 			<label>Рада New верт 600 white </label>
+	 			<input type="checkbox" id="gal1">
+        			<input type="text" name="aa" id="myInput1">
+      			</div>
+
+      			<div id="div2">
+        			<label>Рада New верт 700 white </label>
+				<input type="checkbox" id="gal2">
+        			<input type="text" id="myInput2" name="ab">
+      			</div>
+
+			<div id="div3">
+        			<label>Рада New верт 800 white </label>
+				<input type="checkbox" id="gal3">
+        			<input type="text" id="myInput3" name="ac">
+      			</div>
+
+	  		<button type="button" id="nextBtn" onclick="nextPrev(1)">Взять</button>
+
+	  	</div>
+		<div class ="tab">
+
+			<button class="open-button" id='ax'>
+				<div class="div" id='el1-1'> </div>
+			</button>
+
+			<button class="open-button2" id='bx'>
+				<div class="div" id='el2-1'> </div>
+			</button>
+
+			<button class="open-button3" id='cx'>
+		<div class="div" id='el3-1'> </div>
+	</button>
+		</div>
+		<div>
+  			<span class="step"></span>
+  			<span class="step"></span>
+		</div>
+	    </form>
+</div>
+
+
+<script src="./shagi.js"> </script>
+
+<script>
+const URL_APP =   "https://script.google.com/macros/s/AKfycbytLFbpUFQ77U6Vm6Yc5JofKfgABfjwC4x1WznANHstUS1UnnhaY3RaYCoS3U-fehalHw/exec";
+const URL_APP2 =  "https://script.google.com/macros/s/AKfycbz72jfUrKzwUtuVi8aFgA6Poc_QFp5tEN5xEzgSSXlRiohZX6Qr3AQHabVnzzaG6MRs0A/exec";
+const URL_APP3 =  "https://script.google.com/macros/s/AKfycbyTZ8yLTRiLNhf9FWPDwZAY1awEoxM0Ak1kHJK_VP26j9J3pj54-li1uH4HV69JvpCtNg/exec";
+const URL_APP4 =  "https://script.google.com/macros/s/AKfycbxuyoOv_DSOg6xydd6Uvj9ZxsVSHZKQDRdL2wB2xuqzGIyaVRqQVEMHm1OzPihTw-Dr-w/exec";
+
+	// определяем какая кнопка нажата
+let q;
+function knop1() {q = 1;  };
+function knop2() { q = 2; };
+function knop3() { q = 1; };
+function knop4() { q = 3; };
+kn1.addEventListener("click", knop1)
+kn2.addEventListener("click", knop2)
+kn3.addEventListener("click", knop3)
+kn4.addEventListener("click", knop4)
+
+      // находим форму в документе
+ const form = document.querySelector("#form");
+// навешиваем обработчик на отправку формы
+ax.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+        let details = {aa, ab, ac, q,};
+
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+bx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+
+        let details = {aa, ab, ac, q,};
+
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP2, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+cx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+
+        let details = {aa, ab, ac, q,};
+
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP4, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+ay.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+
+		var ba = document.querySelector("[name=ba]");
+		ba = ba.value.trim();
+
+		var bb = document.querySelector("[name=bb]");
+		bb = bb.value.trim();
+
+		var bc = document.querySelector("[name=bc]");
+		bc = bc.value.trim();
+
+        let details = {ba, bb, bc, q};
+
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP3, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+</script>
+  </body>
+</html>
