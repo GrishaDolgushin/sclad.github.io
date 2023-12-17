@@ -30,6 +30,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   bottom: 123px;
   right: 128px;
   width: 250px;
+  transform: rotate(90deg);
 }
 
 .open-button3 {
