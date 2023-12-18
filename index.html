@@ -150,7 +150,7 @@
 const URL_APP =   "https://script.google.com/macros/s/AKfycbxOlBQgCx2fSkwgznrHRddC51SO0pZ-JRXQ5e92SK3j8iwzQk0zxm8fP7zBCrhFaIjW4w/exec";
 const URL_APP1 =  "https://script.google.com/macros/s/AKfycbwmIDJj4hqZc0kqEP_S_4J9A6bGiXje9wxQ8D7uvOgE9okU_XZNXWQ5oZeYa3Y-2ApH3A/exec";
 const URL_APP3 =  "https://script.google.com/macros/s/AKfycbyeguofP9S2p1Dscs3I-YoqKB2kYvYAllcUZLFyRdsPtc6-fAE2OcCfcxR9f5xWT0Ybqw/exec";
-const URL_APP4 =  "https://script.google.com/macros/s/AKfycbxuyoOv_DSOg6xydd6Uvj9ZxsVSHZKQDRdL2wB2xuqzGIyaVRqQVEMHm1OzPihTw-Dr-w/exec";
+const URL_APP4 =  "https://script.google.com/macros/s/AKfycbyCvwtDTvqz8da__hTHagdrxq7kA3ThJrLaaxzM9XNfalB8YKevJyToCtV5pCdOXrlxVw/exec;
 
 	// определяем какая кнопка нажата
 let q;
@@ -439,7 +439,6 @@ ay.addEventListener("click", async (ev) => {
 
          if( result.type === 'success' ) {
             name.value = '';
-		 alert("успешно");
 	   location.reload ();
          }
          if( result.type === 'error' ) {
