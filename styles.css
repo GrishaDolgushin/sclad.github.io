@@ -88,6 +88,8 @@ text-align: center;
 
 }
 
+.sclad { position: absolute }
+
 .form-popup1 {
   display: none;
   position: fixed;
