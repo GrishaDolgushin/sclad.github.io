@@ -79,11 +79,13 @@ text-align: center;
 .form-popup {
   display: none;
   position: absolute;
-  left: 0;
   top: 0;
+  rigth: 0;
   z-index: 9;
 
 }
+
+.vs { posithion: fixed; }
 
 .form-popup1 {
   display: none;
