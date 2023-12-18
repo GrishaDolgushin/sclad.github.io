@@ -222,7 +222,7 @@ ax.addEventListener("click", async (ev) => {
           body: formBody,
         })
           .then((res) => res.json())
-          .catch((err) => alert("Карамба!"));
+          .catch((err) => location.reload ());
 
          if( result.type === 'success' ) {
             name.value = '';
