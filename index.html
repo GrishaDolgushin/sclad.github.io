@@ -147,8 +147,8 @@
 <script src="./shagi.js"> </script>
 
 <script>
-const URL_APP =   "https://script.google.com/macros/s/AKfycbzZ0Nu7m1p2FIOAO2-C9cWwjp144Cefq9YUkwuJN9VOrRx-Px-pWdgESFvTiqIyDBPRrA/exec";
-const URL_APP2 =  "https://script.google.com/macros/s/AKfycbz72jfUrKzwUtuVi8aFgA6Poc_QFp5tEN5xEzgSSXlRiohZX6Qr3AQHabVnzzaG6MRs0A/exec";
+const URL_APP =   "https://script.google.com/macros/s/AKfycbxqi-_m8X6LTOfEsGTraVV6oGVgnqK5ZSdYCmvpGjd3ncZzax50emIDjN6nI6C92O3RWg/exec";
+const URL_APP1 =  "https://script.google.com/macros/s/AKfycbzZ0Nu7m1p2FIOAO2-C9cWwjp144Cefq9YUkwuJN9VOrRx-Px-pWdgESFvTiqIyDBPRrA/exec";
 const URL_APP3 =  "https://script.google.com/macros/s/AKfycbyeguofP9S2p1Dscs3I-YoqKB2kYvYAllcUZLFyRdsPtc6-fAE2OcCfcxR9f5xWT0Ybqw/exec";
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbxuyoOv_DSOg6xydd6Uvj9ZxsVSHZKQDRdL2wB2xuqzGIyaVRqQVEMHm1OzPihTw-Dr-w/exec";
 
@@ -294,7 +294,7 @@ bx.addEventListener("click", async (ev) => {
         formBody = formBody.join("&");
 
         // выполняем отправку данных в Google Apps
-        const result = await fetch(URL_APP2, {
+        const result = await fetch(URL_APP1, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
