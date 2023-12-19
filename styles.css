@@ -12,7 +12,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  bottom: 123px;
+  bottom: 523px;
   left: 28px;
   right: 128px;
   width: 280px;
@@ -35,7 +35,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .open-button3 {
-  display: none;
   color: black;
   font-size: 15px;
   font-weight: bold;
@@ -61,7 +60,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  bottom: 0px;
+  top: 400px;
   left: 20px;
   right: 128px;
   width: 280px;
@@ -77,13 +76,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 103px;
+  top: 123px;
   left: 20px;
   width: 250px;
   transform: rotate(90deg);
 }
 
 .open-button3-1 {
+  display: none;
   color: black;
   font-size: 15px;
   font-weight: bold;
