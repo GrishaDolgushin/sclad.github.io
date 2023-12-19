@@ -76,8 +76,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 120px;
-  left: 20px;
+  top: 126px;
+  left: 25px;
   width: 250px;
   transform: rotate(90deg);
 }
