@@ -203,7 +203,7 @@
 <script>
 const URL_APP =   "https://script.google.com/macros/s/AKfycbyVn5_KSPB0_Jksm0QZKW1Z4jrREvLbK44QRRBePFwf5LU30FuAzjtvLAhHpSLHyMv_Vg/exec";
 const URL_APP2 =  "https://script.google.com/macros/s/AKfycbx3oQT_fSRM5-rn8LJwnA7tn9q5YlSh9QF_Gv6zCqRGjUXO6LrG9Npd-kqP-q9-FIREZA/exec";
-const URL_APP3 =  "https://script.google.com/macros/s/AKfycbyeguofP9S2p1Dscs3I-YoqKB2kYvYAllcUZLFyRdsPtc6-fAE2OcCfcxR9f5xWT0Ybqw/exec";
+const URL_APP3 =  "https://script.google.com/macros/s/AKfycbx2DT0E6JZMPw7iHR5m8BvjTBNAp6RmdoOqAiUPCJkYa57jYvK0ekH6Mq-BGnPap-OWJQ/exec";
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbxkQXurkSOxiEfVAKmzFrjqokoNpypXWO3IfuZmgF6xx6L5KvlLd_s7UqSFLWt3HZJowQ/exec";
 
 	// определяем какая кнопка нажата
@@ -223,6 +223,7 @@ kn4.addEventListener("click", knop4)
 ax.addEventListener("click", async (ev) => {
 	// отменяем действие по умолчанию
         ev.preventDefault();
+	
         if (gal1.checked) {
 		var aa = document.querySelector("[name=aa]");
 		aa = aa.value.trim();
@@ -259,7 +260,43 @@ ax.addEventListener("click", async (ev) => {
 	} else
 	      var ag = 0;
 
-        let details = {aa, ab, ac, ad, af, ag, q,};
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
 
         // подготавливаем данные для отправки
         let formBody = [];
@@ -334,7 +371,43 @@ bx.addEventListener("click", async (ev) => {
 	} else
 	      var ag = 0;
 
-        let details = {aa, ab, ac, ad, af, ag, q,};
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
 
         // подготавливаем данные для отправки
         let formBody = [];
@@ -409,7 +482,43 @@ cx.addEventListener("click", async (ev) => {
 	} else
 	      var ag = 0;
 
-        let details = {aa, ab, ac, ad, af, ag, q,};
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
 
         // подготавливаем данные для отправки
         let formBody = [];
@@ -448,6 +557,7 @@ cx.addEventListener("click", async (ev) => {
 ay.addEventListener("click", async (ev) => {
 	// отменяем действие по умолчанию
         ev.preventDefault();
+	
 		var ba = document.querySelector("[name=ba]");
 		ba = ba.value.trim();
 
@@ -457,7 +567,7 @@ ay.addEventListener("click", async (ev) => {
 		var bc = document.querySelector("[name=bc]");
 		bc = bc.value.trim();
 
-	var bd = document.querySelector("[name=bd]");
+		var bd = document.querySelector("[name=bd]");
 		bd = bd.value.trim();
 
 		var bf = document.querySelector("[name=bf]");
@@ -466,7 +576,25 @@ ay.addEventListener("click", async (ev) => {
 		var bg = document.querySelector("[name=bg]");
 		bg = bg.value.trim();
 
-        let details = {ba, bb, bc, bd, bf, bg, q};
+		var bh = document.querySelector("[name=bh]");
+		bh = bh.value.trim();
+
+		var bi = document.querySelector("[name=bi]");
+		bi = bi.value.trim();
+
+		var bj = document.querySelector("[name=bj]");
+		bj = bj.value.trim();
+
+		var bk = document.querySelector("[name=bk]");
+		bk = bk.value.trim();
+
+		var bl = document.querySelector("[name=bl]");
+		bl = bl.value.trim();
+
+		var bm = document.querySelector("[name=bm]");
+		bm = bm.value.trim();
+
+        let details = {ba, bb, bc, bd, bf, bg, bh, bi, bj, bk, bl, bm, q};
 
         // подготавливаем данные для отправки
         let formBody = [];
