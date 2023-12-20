@@ -16,8 +16,6 @@ function openForm2() {
 		
 	let myInput1 = document.getElementById("myInput1");
         myInput1.value = result [0];
-	let myInput1 = document.getElementById("myInput1");
-        myInput1.value = result [0];
 		if (myInput1.value == 0){
 		document.getElementById("div1").style.display = "none";}
 		
