@@ -45,32 +45,32 @@ function openForm1() {
 
 	let myInput7 = document.getElementById("myInput7");
         myInput7.value = result [12];
-		if (myInput1.value == 0){
+		if (myInput7.value == 0){
 		document.getElementById("div7").style.display = "none";}
 		
 	let myInput8 = document.getElementById("myInput8");
         myInput8.value = result [14];
-		if (myInput2.value == 0){
+		if (myInput8.value == 0){
 		document.getElementById("div8").style.display = "none";}
 		
 	let myInput9 = document.getElementById("myInput9");
         myInput9.value = result [16];
-		if (myInput3.value == 0){
+		if (myInput9.value == 0){
 		document.getElementById("div9").style.display = "none";}
 		
 	let myInput10 = document.getElementById("myInput10");
         myInput10.value = result [18];
-		if (myInput4.value == 0){
+		if (myInput10.value == 0){
 		document.getElementById("div10").style.display = "none";}
 		
 	let myInput11 = document.getElementById("myInput11");
         myInput11.value = result [20];
-		if (myInput5.value == 0){
+		if (myInput11.value == 0){
 		document.getElementById("div11").style.display = "none";}
 		
 	let myInput12 = document.getElementById("myInput12");
         myInput12.value = result [22];
-		if (myInput6.value == 0){
+		if (myInput12.value == 0){
 		document.getElementById("div12").style.display = "none";}
 
         } catch(e) {}
