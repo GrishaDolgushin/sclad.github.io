@@ -52,7 +52,7 @@ function openForm2() {
 	let myInput8 = document.getElementById("myInput8");
         myInput8.value = result [14];
 		
-		if (myInput2.value == 0){
+		if (myInput8.value == 0){
 		document.getElementById("div8").style.display = "none";}
 		
 	let myInput9 = document.getElementById("myInput9");
