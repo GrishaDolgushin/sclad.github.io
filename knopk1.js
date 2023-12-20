@@ -1,5 +1,6 @@
 function openForm1() {
     document.getElementById("myForm1").style.display = "block";
+    window.scrollTo(0,0);
 
 	   var app = "https://script.google.com/macros/s/AKfycbyumcFR3Lj6HBrsOdeekJmiyIfcFJuL2k65pebDnSn1vTk3qEPxLSaJdnDV6OnUFmHqRQ/exec",
       output = '',
