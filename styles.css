@@ -31,9 +31,9 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 225px;
-  left: 28px;
-  width: 250px;
+  top: 275px;
+  left: 20px;
+  width: auto;
   transform: rotate(90deg);
 }
 
