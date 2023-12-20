@@ -19,7 +19,7 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
-		document.getElementById('el3').innerHTML = output ;
+		document.getElementById('el4').innerHTML = output ;
         } catch(e) {}
 
 
