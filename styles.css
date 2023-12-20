@@ -53,55 +53,6 @@ body {
   width: auto;
 }
 
-.open-button0-1 {
-  background-color: #3D5;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: absolute;
-  top: 429px;
-  left: 20px;
-  right: 128px;
-  width: 280px;
-}
-
-.open-button2-1 {
-  background-color: #33D5;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: absolute;
-  top: 131px;
-  left: 20px;
-  width: 250px;
-  transform: rotate(90deg);
-}
-
-.open-button3-1 {
-  display: none;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 10px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: auto;
-}
-
 .poisk {
   position: fixed;
   top: 0px;
@@ -130,7 +81,7 @@ text-align: center;
 
 .form-popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -138,10 +89,6 @@ text-align: center;
 
 }
 
-.vs { 
-  posithion: fixed;
-  top: 0px;
-    }
 
 .form-popup1 {
   display: none;
