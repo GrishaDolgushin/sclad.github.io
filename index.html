@@ -46,7 +46,7 @@
 		<div id='el3'> </div>
 	</button>
 
-	<button class="open-button id='kn5'>
+	<button class="open-button4 id='kn5'>
 		<div id='el4'> </div>
 	</button>
 
@@ -193,6 +193,10 @@
 			<button class="open-button" id='cx'>
 				<div class="div" id='el3-1'> </div>
 			</button>
+
+			<button class="open-button4" id='dx'>
+				<div class="div" id='el4-1'> </div>
+			</button>
 			</div>
 		</div>
 		<div>
@@ -210,6 +214,7 @@ const URL_APP =   "https://script.google.com/macros/s/AKfycbwVZPBel-Y85Fb9_DA1kr
 const URL_APP2 =  "https://script.google.com/macros/s/AKfycbz3haJmlbiSM_uMO7g0yWu2WG6XtpSDnUJIxRSG2hIVfxY0JyjlfeFJy_MTgJlY8woimg/exec";
 const URL_APP3 =  "https://script.google.com/macros/s/AKfycbz1q0F6iWnJdhzndHR46Nb6QN2r0-jI-tQhO9dOi-VKgPAUlLpoJop-suawFNoC6UzbPw/exec";
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbyKusLeprNiZX5zTHKxpwxrru6jciwOMvCt7AafLatdGQByoZpEu8Zon0KTzhLdEhSvWw/exec";
+const URL_APP4 =  "https://script.google.com/macros/s/AKfycbyKusLeprNiZX5zTHKxpwxrru6jciwOMvCt7AafLatdGQByoZpEu8Zon0KTzhLdEhSvWw/exec";
 
 	// определяем какая кнопка нажата
 let q;
@@ -217,10 +222,12 @@ function knop1() {q = 1;  };
 function knop2() { q = 2; };
 function knop3() { q = 1; };
 function knop4() { q = 3; };
+function knop5() { q = 4; };
 kn1.addEventListener("click", knop1)
 kn2.addEventListener("click", knop2)
 kn3.addEventListener("click", knop3)
 kn4.addEventListener("click", knop4)
+kn5.addEventListener("click", knop5)
 
       // находим форму в документе
  const form = document.querySelector("#form");
@@ -559,6 +566,117 @@ cx.addEventListener("click", async (ev) => {
 
       });
 
+dx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+	if (gal4.checked) {
+		var ad = document.querySelector("[name=ad]");
+		ad = ad.value.trim();
+	} else
+		var ad = 0;
+
+	if (gal5.checked) {
+		var af = document.querySelector("[name=af]");
+		af = af.value.trim();
+	} else
+		var af = 0;
+
+	if (gal6.checked) {
+		var ag = document.querySelector("[name=ag]");
+		ag = ag.value.trim();
+	} else
+	      var ag = 0;
+
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
+
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP5, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+	
 ay.addEventListener("click", async (ev) => {
 	// отменяем действие по умолчанию
         ev.preventDefault();
