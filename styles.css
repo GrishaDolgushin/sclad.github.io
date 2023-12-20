@@ -37,6 +37,22 @@ body {
   transform: rotate(90deg);
 }
 
+.open-button4 {
+  background-color: #33D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  left: 60px;
+  width: auto;
+  transform: rotate(90deg);
+}
+
 .open-button3 {
   color: black;
   font-size: 15px;
