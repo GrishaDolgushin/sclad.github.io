@@ -202,7 +202,7 @@
 
 <script>
 const URL_APP =   "https://script.google.com/macros/s/AKfycbyVn5_KSPB0_Jksm0QZKW1Z4jrREvLbK44QRRBePFwf5LU30FuAzjtvLAhHpSLHyMv_Vg/exec";
-const URL_APP1 =  "https://script.google.com/macros/s/AKfycbwmIDJj4hqZc0kqEP_S_4J9A6bGiXje9wxQ8D7uvOgE9okU_XZNXWQ5oZeYa3Y-2ApH3A/exec";
+const URL_APP2 =  "https://script.google.com/macros/s/AKfycbx3oQT_fSRM5-rn8LJwnA7tn9q5YlSh9QF_Gv6zCqRGjUXO6LrG9Npd-kqP-q9-FIREZA/exec";
 const URL_APP3 =  "https://script.google.com/macros/s/AKfycbyeguofP9S2p1Dscs3I-YoqKB2kYvYAllcUZLFyRdsPtc6-fAE2OcCfcxR9f5xWT0Ybqw/exec";
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbxkQXurkSOxiEfVAKmzFrjqokoNpypXWO3IfuZmgF6xx6L5KvlLd_s7UqSFLWt3HZJowQ/exec";
 
@@ -348,7 +348,7 @@ bx.addEventListener("click", async (ev) => {
         formBody = formBody.join("&");
 
         // выполняем отправку данных в Google Apps
-        const result = await fetch(URL_APP1, {
+        const result = await fetch(URL_APP2, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
