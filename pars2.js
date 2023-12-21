@@ -20,6 +20,7 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
+		if (output=='') { document.getElementById('el2').innerHTML = "Свободное место";} else
 		document.getElementById('el2').innerHTML = output ;
         } catch(e) {}
 
