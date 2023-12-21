@@ -51,6 +51,21 @@ body {
   transform: rotate(90deg);
 }
 
+.open-button5 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 160px;
+  width: auto;
+  transform: rotate(90deg);
+}
+
 .open-button3 {
   color: black;
   font-size: 15px;
