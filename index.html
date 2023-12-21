@@ -12,16 +12,19 @@
 	<script src="./knopk3.js"> </script>
 	<script src="./knopk4.js"> </script>
 	<script src="./knopk5.js"> </script>
+	<script src="./knopk6.js"> </script>
 	<script src="./pars1.js"> </script>
 	<script src="./pars2.js"> </script>
 	<script src="./pars3.js"> </script>
 	<script src="./pars4.js"> </script>
 	<script src="./pars5.js"> </script>
+	<script src="./pars6.js"> </script>
 	<script src="./pars1-1.js"> </script>
 	<script src="./pars2-1.js"> </script>
 	<script src="./pars3-1.js"> </script>
 	<script src="./pars4-1.js"> </script>
 	<script src="./pars5-1.js"> </script>
+	<script src="./pars6-1.js"> </script>
 	<script src="./poisk.js"> </script>
 	<script src="./knopkpoisk.js"> </script>
   </head>
@@ -60,6 +63,10 @@
 
 	<button class="open-button5" id='kn6' onclick="openForm6()">
 		<div id='el5'> </div>
+	</button>
+
+	<button class="open-button6" id='kn7' onclick="openForm7()">
+		<div id='el6'> </div>
 	</button>
 
 
@@ -214,6 +221,11 @@
 			<button class="open-button5" id='fx'>
 				<div class="div" id='el5-1'> </div>
 			</button>
+
+			<button class="open-button6" id='gx'>
+				<div class="div" id='el6-1'> </div>
+			</button>
+				
 			</div>
 		</div>
 		<div>
@@ -233,6 +245,8 @@ const URL_APP3 =  "https://script.google.com/macros/s/AKfycbz1q0F6iWnJdhzndHR46N
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbyKusLeprNiZX5zTHKxpwxrru6jciwOMvCt7AafLatdGQByoZpEu8Zon0KTzhLdEhSvWw/exec";
 const URL_APP5 =  "https://script.google.com/macros/s/AKfycbxnw3tcd_4Ku65JyI_yLcPhmwaneX8VK8i5Ro9oEGBMTFfqz8wCNT1_4fxTM6ig35NANA/exec";
 const URL_APP6 =  "https://script.google.com/macros/s/AKfycbwv6RsIRaBzDSAYRiVGVlM6XTGmD7J28WpxQFEHKCpexim2JIcd9cAWEAUcP2hFFrtfqQ/exec";
+const URL_APP7 =  "https://script.google.com/macros/s/AKfycbwv6RsIRaBzDSAYRiVGVlM6XTGmD7J28WpxQFEHKCpexim2JIcd9cAWEAUcP2hFFrtfqQ/exec";
+
 
 	// определяем какая кнопка нажата
 let q;
@@ -242,12 +256,14 @@ function knop3() { q = 1; };
 function knop4() { q = 3; };
 function knop5() { q = 4; };
 function knop6() { q = 5; };
+function knop7() { q = 6; };
 kn1.addEventListener("click", knop1)
 kn2.addEventListener("click", knop2)
 kn3.addEventListener("click", knop3)
 kn4.addEventListener("click", knop4)
 kn5.addEventListener("click", knop5)
 kn6.addEventListener("click", knop6)
+kn7.addEventListener("click", knop7)
 
       // находим форму в документе
  const form = document.querySelector("#form");
@@ -785,6 +801,116 @@ fx.addEventListener("click", async (ev) => {
 
         // выполняем отправку данных в Google Apps
         const result = await fetch(URL_APP6, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => alert(err));
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+gx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+	if (gal4.checked) {
+		var ad = document.querySelector("[name=ad]");
+		ad = ad.value.trim();
+	} else
+		var ad = 0;
+
+	if (gal5.checked) {
+		var af = document.querySelector("[name=af]");
+		af = af.value.trim();
+	} else
+		var af = 0;
+
+	if (gal6.checked) {
+		var ag = document.querySelector("[name=ag]");
+		ag = ag.value.trim();
+	} else
+	      var ag = 0;
+
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP7, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
