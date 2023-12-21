@@ -11,6 +11,7 @@
 	<script src="./knopk2.js"> </script>
 	<script src="./knopk3.js"> </script>
 	<script src="./knopk4.js"> </script>
+	<script src="./knopk5.js"> </script>
 	<script src="./pars1.js"> </script>
 	<script src="./pars2.js"> </script>
 	<script src="./pars3.js"> </script>
@@ -187,7 +188,7 @@
       			</div>
 
 	  		<button type="button" id="nextBtn" onclick="nextPrev(1)">Взять</button>
-</div>
+			</div>
 	  	</div>
 		<div class ="tab">
 			<div class="sclad">
@@ -229,7 +230,7 @@ const URL_APP2 =  "https://script.google.com/macros/s/AKfycbz3haJmlbiSM_uMO7g0yW
 const URL_APP3 =  "https://script.google.com/macros/s/AKfycbz1q0F6iWnJdhzndHR46Nb6QN2r0-jI-tQhO9dOi-VKgPAUlLpoJop-suawFNoC6UzbPw/exec";
 const URL_APP4 =  "https://script.google.com/macros/s/AKfycbyKusLeprNiZX5zTHKxpwxrru6jciwOMvCt7AafLatdGQByoZpEu8Zon0KTzhLdEhSvWw/exec";
 const URL_APP5 =  "https://script.google.com/macros/s/AKfycbxnw3tcd_4Ku65JyI_yLcPhmwaneX8VK8i5Ro9oEGBMTFfqz8wCNT1_4fxTM6ig35NANA/exec";
-const URL_APP6 =  "https://script.google.com/macros/s/AKfycbxnw3tcd_4Ku65JyI_yLcPhmwaneX8VK8i5Ro9oEGBMTFfqz8wCNT1_4fxTM6ig35NANA/exec";
+const URL_APP6 =  "https://script.google.com/macros/s/AKfycbwv6RsIRaBzDSAYRiVGVlM6XTGmD7J28WpxQFEHKCpexim2JIcd9cAWEAUcP2hFFrtfqQ/exec";
 
 	// определяем какая кнопка нажата
 let q;
@@ -693,7 +694,7 @@ dx.addEventListener("click", async (ev) => {
 
       });
 
-dx.addEventListener("click", async (ev) => {
+fx.addEventListener("click", async (ev) => {
 	// отменяем действие по умолчанию
         ev.preventDefault();
         if (gal1.checked) {
