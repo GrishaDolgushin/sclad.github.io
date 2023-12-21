@@ -105,7 +105,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
+  top: 550px;
   right: 0px;
   width: 210;
   transform: rotate(90deg);
@@ -120,7 +120,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
+  top: 825px;
   right: 40px;
   width: 210;
   transform: rotate(90deg);
@@ -135,7 +135,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
+  top: 825px;
   right: 160px;
   width: 210;
   transform: rotate(90deg);
@@ -150,26 +150,24 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 550px;
-  right: 160px;
+  top: 825px;
+  right: 0px;
   width: 210;
   transform: rotate(90deg);
 }
 
 .open-button12 {
-  color: black;
+  background-color: #3D5;
+  color: white;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 10px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 60px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  width: auto;
+  top: 1125px;
+  right: 40px;
+  width: 210;
 }
 
 
@@ -182,10 +180,9 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
-  right: 0px;
+  top: 1125px;
+  right: 440px;
   width: 210;
-  transform: rotate(90deg);
 }
 
 .open-button14 {
@@ -197,10 +194,9 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
-  right: 40px;
+  top: 1475px;
+  right: 440px;
   width: 210;
-  transform: rotate(90deg);
 }
 
 .open-button15 {
@@ -212,8 +208,8 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 275px;
-  right: 160px;
+  top: 1575px;
+  right: 40px;
   width: 210;
   transform: rotate(90deg);
 }
@@ -227,7 +223,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 550px;
+  top: 1575px;
   right: 160px;
   width: 210;
   transform: rotate(90deg);
@@ -242,8 +238,8 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 550px;
-  right: 160px;
+  top: 1575px;
+  right: 0px;
   width: 210;
   transform: rotate(90deg);
 }
