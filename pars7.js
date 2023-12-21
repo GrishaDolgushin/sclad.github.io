@@ -19,8 +19,8 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
-		if (output=='') { document.getElementById('el6').innerHTML = "Свободное место";} else
-		document.getElementById('el6').innerHTML = output ;
+		if (output=='') { document.getElementById('el7').innerHTML = "Свободное место";} else
+		document.getElementById('el7').innerHTML = output ;
         } catch(e) {}
 
 
