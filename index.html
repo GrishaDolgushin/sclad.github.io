@@ -919,7 +919,7 @@ gx.addEventListener("click", async (ev) => {
           body: formBody,
         })
           .then((res) => res.json())
-          .catch((err) => alert(err));
+          .catch((err) => location.reload ());
 
          if( result.type === 'success' ) {
             name.value = '';
