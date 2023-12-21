@@ -26,13 +26,12 @@ body {
   color: white;
   font-size: 15px;
   font-weight: bold;
-  padding: 16px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: 5px;
+  right: 0px;
   width: auto;
   transform: rotate(90deg);
 }
@@ -42,7 +41,6 @@ body {
   color: white;
   font-size: 15px;
   font-weight: bold;
-  padding: 16px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
