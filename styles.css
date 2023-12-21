@@ -96,7 +96,67 @@ body {
   transform: rotate(90deg);
 }
 
-.open-button3 {
+.open-button8 {
+  background-color: #33D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 0px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button9 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 40px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button10 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 160px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button11 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 550px;
+  right: 160px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button12 {
   color: black;
   font-size: 15px;
   font-weight: bold;
@@ -112,6 +172,97 @@ body {
   width: auto;
 }
 
+
+.open-button13 {
+  background-color: #33D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 0px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button14 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 40px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button15 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 275px;
+  right: 160px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button16 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 550px;
+  right: 160px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button17 {
+  background-color: #3D5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 550px;
+  right: 160px;
+  width: 210;
+  transform: rotate(90deg);
+}
+
+.open-button3 {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
 .poisk {
   position: fixed;
   top: 0px;
