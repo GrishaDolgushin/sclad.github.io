@@ -46,7 +46,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: 40px;
+  right: -40px;
   width: 210;
   transform: rotate(90deg);
 }
@@ -61,7 +61,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: 160px;
+  right: 0px;
   width: 210;
   transform: rotate(90deg);
 }
