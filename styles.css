@@ -22,17 +22,17 @@ body {
 }
 
 .open-button2 {
-  background-color: #33D5;
-  color: white;
+  color: black;
   font-size: 15px;
   font-weight: bold;
-  border: none;
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
   top: 275px;
   right: 0px;
-  width: 210;
+  width: 260;
+  border: 2px solid;
+  border-radius: 1px;
   transform: rotate(90deg);
 }
 
