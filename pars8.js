@@ -1,5 +1,5 @@
 (function f1() {
-   var app = "https://script.google.com/macros/s/AKfycbySz-JUlYHkvECVGLD8Nv26x_ZRD77UISi7ZaYwWvo4fUnm_he6ZJ-Kx7dzbCjJIc2RAQ/exec", //ссылка на таблицу
+   var app = "https://script.google.com/macros/s/AKfycbztgMiY1me_gazX0icS-vw-iZUSXGE3euwSOe4m-1cGigzDcG9bIVE1o90_-3ONJYawbQ/exec", //ссылка на таблицу
       output = '',
       xhr = new XMLHttpRequest();
    xhr.open('GET', app);
@@ -25,7 +25,11 @@
 
 
      }
+
    }
+
+   xhr.send()
+})()
 
    
 
