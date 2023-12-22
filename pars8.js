@@ -1,5 +1,5 @@
 (function f1() {
-   var app = "https://script.google.com/macros/s/AKfycbztgMiY1me_gazX0icS-vw-iZUSXGE3euwSOe4m-1cGigzDcG9bIVE1o90_-3ONJYawbQ/exec", //ссылка на таблицу
+   var app = "https://script.google.com/macros/s/AKfycbw_Q0s99aySyDfeIs6eDkKS5Z0L3QRZRSmOGxoVqXf2CcX8EpX2avHyZgXVQZDrqtRnUQ/exec", //ссылка на таблицу
       output = '',
       xhr = new XMLHttpRequest();
    xhr.open('GET', app);
