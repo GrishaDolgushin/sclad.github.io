@@ -29,7 +29,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: -80px;
+  right: -100px;
   width: 300px;
   height: 50px;
   border: 2px solid;
@@ -46,7 +46,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  left: 600px;
+  right: 0px;
   width: 300px;
   height: 50px;
   border: 2px solid;
@@ -63,7 +63,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: 20px;
+  right: 100px;
   width: 300px;
   height: 50px;
   border: 2px solid;
