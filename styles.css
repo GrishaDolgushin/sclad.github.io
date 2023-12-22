@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: 275px;
   right: -80px;
-  width: 560px;
+  width: 300px;
   height: 50px;
   border: 2px solid;
   border-radius: 1px;
@@ -46,8 +46,8 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  right: -40px;
-  width: 560px;
+  right: -30px;
+  width: 300px;
   height: 50px;
   border: 2px solid;
   border-radius: 1px;
@@ -63,7 +63,8 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 275px;
-  width: 560px;
+  right: 20px;
+  width: 300px;
   height: 50px;
   border: 2px solid;
   border-radius: 1px;
