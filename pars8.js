@@ -1,5 +1,4 @@
 (function f1() {
-   var app = "(function f1() {
    var app = "https://script.google.com/macros/s/AKfycbySz-JUlYHkvECVGLD8Nv26x_ZRD77UISi7ZaYwWvo4fUnm_he6ZJ-Kx7dzbCjJIc2RAQ/exec", //ссылка на таблицу
       output = '',
       xhr = new XMLHttpRequest();
@@ -27,6 +26,6 @@
 
      }
 
-   }
+   
 
 
