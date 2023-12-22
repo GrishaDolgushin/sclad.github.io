@@ -33,6 +33,7 @@ body {
   width: 260;
   border: 2px solid;
   border-radius: 1px;
+  transform: rotate(90deg);
 }
 
 .open-button4 {
