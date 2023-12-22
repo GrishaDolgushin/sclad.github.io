@@ -1,5 +1,5 @@
 (function f1() {
-   var app = "https://script.google.com/macros/s/AKfycbySz-JUlYHkvECVGLD8Nv26x_ZRD77UISi7ZaYwWvo4fUnm_he6ZJ-Kx7dzbCjJIc2RAQ/exec", //ссылка на таблицу
+   var app = "https://script.google.com/macros/s/AKfycbzjn6OLBNeF5y1FUjyQjo_A8KoJNmZE6Nkh8NsOGNWkLz9-SpEoK9KYbpbx9mbio4Po5g/exec", //ссылка на таблицу
       output = '',
       xhr = new XMLHttpRequest();
    xhr.open('GET', app);
@@ -19,8 +19,8 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
-		if (output=='') { document.getElementById('el7').innerHTML = "Свободное место";} else
-		document.getElementById('el7').innerHTML = output ;
+		if (output=='') { document.getElementById('el14').innerHTML = "Свободное место";} else
+		document.getElementById('el14').innerHTML = output ;
         } catch(e) {}
 
 
