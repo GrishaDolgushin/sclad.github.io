@@ -1,6 +1,6 @@
 (function f1() {
    var app = "(function f1() {
-   var app = "https://script.google.com/macros/s/AKfycbySz-JUlYHkvECVGLD8Nv26x_ZRD77UISi7ZaYwWvo4fUnm_he6ZJ-Kx7dzbCjJIc2RAQ/exec", //ссылка на таблицу
+   var app = "https://script.google.com/macros/s/AKfycbw_Q0s99aySyDfeIs6eDkKS5Z0L3QRZRSmOGxoVqXf2CcX8EpX2avHyZgXVQZDrqtRnUQ/exec", //ссылка на таблицу
       output = '',
       xhr = new XMLHttpRequest();
    xhr.open('GET', app);
