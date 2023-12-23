@@ -269,7 +269,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1800px;
+  top: 2000px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -286,7 +286,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 2000px;
+  top: 2500px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
