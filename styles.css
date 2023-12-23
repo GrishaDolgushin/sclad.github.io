@@ -345,7 +345,7 @@ body {
 
 .otgrus {
   position: absolute;
-  top: 2500px;
+  top: 2000px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
