@@ -19,7 +19,7 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
-		if (output=='') { document.getElementById('el1-1').innerHTML = "Свободное место";} else
+		if (output=='') { document.getElementById('el1-1').innerHTML = "Добавьте палет";} else
 		document.getElementById('el1-1').innerHTML = output ;
         } catch(e) {}
 
