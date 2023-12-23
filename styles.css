@@ -97,7 +97,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 610px;
-  left: -20x;
+  left: -20px;
   width: 290px;
   height: 50px;
   border: 2px solid;
@@ -199,7 +199,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 1125px;
-  left: 300px;
+  left: 330px;
   width: 290px;
   height: 50px;
   border: 2px solid;
@@ -215,7 +215,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 1275px;
-  left: 300px;
+  left: 330px;
   width: 290px;
   height: 50px;
   border: 2px solid;
@@ -264,7 +264,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1375px;
+  top: 1475px;
   left: -100px;
   width: 290px;
   height: 50px;
