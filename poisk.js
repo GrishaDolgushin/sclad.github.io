@@ -19,8 +19,6 @@ function FindOnPage(inputId) {//ищет текст на странице, в п
     return;
   }
 
-  if(document.body.innerHTML.indexOf(textToFind)=="-1")
-  alert("Ничего не найдено");
 
   if(copy_page.length>0)
         document.body.innerHTML=copy_page;
