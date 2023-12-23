@@ -371,6 +371,12 @@ top: 200px;
 text-align: center;
 }
 
+.zak {
+position: relative;
+top: 200px;
+text-align: center;
+}
+
 .form-popup {
   display: none;
   position: absolute;
@@ -378,7 +384,6 @@ text-align: center;
   right: 0;
   left: 0;
   z-index: 9;
-
 }
 
 
