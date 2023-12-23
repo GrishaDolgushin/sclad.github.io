@@ -13,7 +13,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 2350px;
+  top: 2250px;
   width: 290px;
   height: auto;
   left: 50%;
@@ -345,7 +345,7 @@ body {
 
 .otgrus {
   position: absolute;
-  top: 2500px;
+  top: 2450px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
