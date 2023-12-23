@@ -20,7 +20,7 @@
 			output += result [i]+ " " + result [i+1] + "<br/>";
 			}
 		}
-		if (output=='') { document.getElementById('el3').innerHTML = "Добавьте заказ;} else
+		if (output=='') { document.getElementById('el3').innerHTML = "Добавьте заказ"} else
 		document.getElementById('el3').innerHTML = output ;
         } catch(e) {}
 
