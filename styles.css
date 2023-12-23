@@ -269,12 +269,12 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1825px;
-  width: 350px;
-  height: auto;
+  top: 1800px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  width: 350px;
+  height: auto;
   border: 2px solid;
   border-radius: 1px;
 }
