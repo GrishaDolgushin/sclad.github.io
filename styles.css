@@ -281,7 +281,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1775px;
+  top: 1725px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -299,7 +299,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1800px;
+  top: 1900px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -355,7 +355,7 @@ text-align: center;
 
 .stel {
 position: relative;
-top: 300px;
+top: 1575px;
 text-align: center;
 }
 
@@ -367,7 +367,7 @@ text-align: center;
 
 .stel2 {
 position: relative;
-top: 1700px;
+top: 300px;
 text-align: center;
 }
 
