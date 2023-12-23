@@ -329,8 +329,8 @@ body {
 
 .poisk {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 10px;
+  left: 300px;
 }
 
 .priem {
@@ -385,7 +385,7 @@ text-align: center;
 
 .form-popup1 {
   display: none;
-  position: fixed;
+  position: absolut;
   right: 0px;
   left: 0px;
   top: 0px;
