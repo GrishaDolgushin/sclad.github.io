@@ -314,6 +314,13 @@ top: 100px;
 text-align: center;
 }
 
+.stel {
+position: relative;
+top: 1650px;
+text-align: center;
+}
+
+
 .form-popup {
   display: none;
   position: absolute;
