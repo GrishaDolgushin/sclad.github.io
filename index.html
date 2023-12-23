@@ -25,6 +25,8 @@
 	<script src="./knopk16.js"> </script>
 	<script src="./knopk17.js"> </script>
 	<script src="./knopk18.js"> </script>
+	<script src="./knopk19.js"> </script>
+	<script src="./knopk20.js"> </script>
 	<script src="./pars1.js"> </script>
 	<script src="./pars2.js"> </script>
 	<script src="./pars3.js"> </script>
@@ -42,6 +44,8 @@
 	<script src="./pars15.js"> </script>
 	<script src="./pars16.js"> </script>
 	<script src="./pars17.js"> </script>
+	<script src="./pars18.js"> </script>
+	<script src="./pars19.js"> </script>
 	<script src="./pars1-1.js"> </script>
 	<script src="./pars2-1.js"> </script>
 	<script src="./pars3-1.js"> </script>
@@ -59,6 +63,8 @@
 	<script src="./pars15-1.js"> </script>
 	<script src="./pars16-1.js"> </script>
 	<script src="./pars17-1.js"> </script>
+	<script src="./pars18-1.js"> </script>
+	<script src="./pars19-1.js"> </script>
 	<script src="./poisk.js"> </script>
 	<script src="./knopkpoisk.js"> </script>
   </head>
@@ -145,6 +151,14 @@
 
 	<button class="open-button17" id='kn18' onclick="openForm17()">
 		<div id='el17'> </div>
+	</button>
+
+	<button class="open-button18" id='kn19' onclick="openForm18()">
+		<div id='el18'> </div>
+	</button>
+
+	<button class="open-button19" id='kn20' onclick="openForm19()">
+		<div id='el19'> </div>
 	</button>
 
 <div class="yar">
@@ -349,6 +363,14 @@
 			<button class="open-button17" id='rx'>
 				<div class="div" id='el17-1'> </div>
 			</button>
+
+			<button class="open-button18" id='sx'>
+				<div class="div" id='el18-1'> </div>
+			</button>
+
+			<button class="open-button19" id='tx'>
+				<div class="div" id='el19-1'> </div>
+			</button>
 				
 			</div>
 		</div>
@@ -381,6 +403,9 @@ const URL_APP15 =  "https://script.google.com/macros/s/AKfycbw7FWi3ODHM7iYNCXPIN
 const URL_APP16 =  "https://script.google.com/macros/s/AKfycbxjPo9B79YcmMBEbiVoxM5NwnDhMy0MD7PvO06dpv0z0RajVcU_7y2qlbdFz5ctPKwE2g/exec";
 const URL_APP17 =  "https://script.google.com/macros/s/AKfycbx2Sb8cSyDiGPGUvLbvBnE7ZzjwqZHxx_ap6nDbL2gruc6UNOGs3nc4s7KhAqOGibQ27A/exec";
 const URL_APP18 =  "https://script.google.com/macros/s/AKfycbwUXFY7Mpd_YlqRRxor9HfXUdVUg7gNi1Xgeo16-4v9iGzAk4FdbLwP7lwn0SVXroHPPQ/exec";
+const URL_APP19 =  "https://script.google.com/macros/s/AKfycbx2Sb8cSyDiGPGUvLbvBnE7ZzjwqZHxx_ap6nDbL2gruc6UNOGs3nc4s7KhAqOGibQ27A/exec";
+const URL_APP20 =  "https://script.google.com/macros/s/AKfycbwUXFY7Mpd_YlqRRxor9HfXUdVUg7gNi1Xgeo16-4v9iGzAk4FdbLwP7lwn0SVXroHPPQ/exec";
+
 
 
 
@@ -407,6 +432,8 @@ function knop15() { q = 14; };
 function knop16() { q = 15; };
 function knop17() { q = 16; };
 function knop18() { q = 17; };
+function knop19() { q = 18; };
+function knop20() { q = 19; };
 kn1.addEventListener("click", knop1)
 kn2.addEventListener("click", knop2)
 kn3.addEventListener("click", knop3)
@@ -425,6 +452,8 @@ kn15.addEventListener("click", knop15)
 kn16.addEventListener("click", knop16)
 kn17.addEventListener("click", knop17)
 kn18.addEventListener("click", knop18)
+kn19.addEventListener("click", knop19)
+kn20.addEventListener("click", knop20)
 
       // находим форму в документе
  const form = document.querySelector("#form");
@@ -2286,6 +2315,226 @@ rx.addEventListener("click", async (ev) => {
 
         // выполняем отправку данных в Google Apps
         const result = await fetch(URL_APP18, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => location.reload ());
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+sx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+	if (gal4.checked) {
+		var ad = document.querySelector("[name=ad]");
+		ad = ad.value.trim();
+	} else
+		var ad = 0;
+
+	if (gal5.checked) {
+		var af = document.querySelector("[name=af]");
+		af = af.value.trim();
+	} else
+		var af = 0;
+
+	if (gal6.checked) {
+		var ag = document.querySelector("[name=ag]");
+		ag = ag.value.trim();
+	} else
+	      var ag = 0;
+
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP19, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          },
+          mode: "cors", //<- оставим по умолчанию
+          body: formBody,
+        })
+          .then((res) => res.json())
+          .catch((err) => location.reload ());
+
+         if( result.type === 'success' ) {
+            name.value = '';
+	   location.reload ();
+         }
+         if( result.type === 'error' ) {
+           alert(`Ошибка, укуси меня пёс!( ${result.errors}`)
+         }
+
+
+      });
+
+tx.addEventListener("click", async (ev) => {
+	// отменяем действие по умолчанию
+        ev.preventDefault();
+        if (gal1.checked) {
+		var aa = document.querySelector("[name=aa]");
+		aa = aa.value.trim();
+	} else
+		var aa = 0;
+
+	if (gal2.checked) {
+		var ab = document.querySelector("[name=ab]");
+		ab = ab.value.trim();
+	} else
+		var ab = 0;
+
+	if (gal3.checked) {
+		var ac = document.querySelector("[name=ac]");
+		ac = ac.value.trim();
+	} else
+	      var ac = 0;
+
+	if (gal4.checked) {
+		var ad = document.querySelector("[name=ad]");
+		ad = ad.value.trim();
+	} else
+		var ad = 0;
+
+	if (gal5.checked) {
+		var af = document.querySelector("[name=af]");
+		af = af.value.trim();
+	} else
+		var af = 0;
+
+	if (gal6.checked) {
+		var ag = document.querySelector("[name=ag]");
+		ag = ag.value.trim();
+	} else
+	      var ag = 0;
+
+	if (gal7.checked) {
+		var ah = document.querySelector("[name=ah]");
+		ah = ah.value.trim();
+	} else
+		var ah = 0;
+
+	if (gal8.checked) {
+		var ai = document.querySelector("[name=ai]");
+		ai = ai.value.trim();
+	} else
+		var ai = 0;
+
+	if (gal9.checked) {
+		var aj = document.querySelector("[name=aj]");
+		aj = aj.value.trim();
+	} else
+	      var aj = 0;
+
+	if (gal10.checked) {
+		var ak = document.querySelector("[name=ak]");
+		ak = ak.value.trim();
+	} else
+		var ak = 0;
+
+	if (gal11.checked) {
+		var al = document.querySelector("[name=al]");
+		al = al.value.trim();
+	} else
+		var al = 0;
+
+	if (gal12.checked) {
+		var am = document.querySelector("[name=am]");
+		am = am.value.trim();
+	} else
+	      var am = 0;
+
+        let details = {aa, ab, ac, ad, af, ag, ah, ai, aj, ak, al, am, q,};
+        // подготавливаем данные для отправки
+        let formBody = [];
+        for (let property in details) {
+          // кодируем названия и значения параметров
+          let encodedKey = encodeURIComponent(property);
+          let encodedValue = encodeURIComponent(details[property]);
+          formBody.push(encodedKey + "=" + encodedValue);
+        }
+        // склеиваем параметры в одну строку
+        formBody = formBody.join("&");
+
+        // выполняем отправку данных в Google Apps
+        const result = await fetch(URL_APP20, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
