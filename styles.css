@@ -282,20 +282,20 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   width: auto;
 }
 .poisk {
-  position: sticky;
+  position: fixed;
   top: 0px;
   left: 0px;
 }
 
 .priem {
-  position: absolut;
+  position: absolute;
   top: 10px;
   left: 50%;
   margin-right: -50%;
