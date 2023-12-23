@@ -267,7 +267,7 @@ body {
   top: 1475px;
   left: -100px;
   width: 290px;
-  height: 50px;
+  height: 50;
   border: 2px solid;
   border-radius: 1px;
   transform: rotate(90deg);
@@ -286,7 +286,7 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 100px;
+  height: auto;
   border: 2px solid;
   border-radius: 1px;
 }
@@ -304,7 +304,7 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 100px;
+  height: auto;
   border: 2px solid;
   border-radius: 1px;
 }
