@@ -1,9 +1,8 @@
 // Функция окрывающая форму
 function openForm8() {
 	window.scrollTo(0,0);
-	alert("раз");
 	document.getElementById("myForm1").style.display = "block";
-	var app = "https://script.google.com/macros/s/AKfycbySz-JUlYHkvECVGLD8Nv26x_ZRD77UISi7ZaYwWvo4fUnm_he6ZJ-Kx7dzbCjJIc2RAQ/exec",
+	var app = "https://script.google.com/macros/s/AKfycbxUP7yeypI9y9VvaI-GsiPQeelsiH4vj6ygjHdvXE7d8aAwfO_a9foqx-pMTATL88JkwQ/exec",
 	output = '',
 	xhr = new XMLHttpRequest();
    	xhr.open('GET', app);
