@@ -1,4 +1,5 @@
 function openForm1() {
+	window.scrollTo(0,0);
     document.getElementById("myForm1").style.display = "block";
 
 	   var app = "https://script.google.com/macros/s/AKfycbyumcFR3Lj6HBrsOdeekJmiyIfcFJuL2k65pebDnSn1vTk3qEPxLSaJdnDV6OnUFmHqRQ/exec",
@@ -71,7 +72,7 @@ function openForm1() {
         myInput12.value = result [22];
 		if (myInput12.value == 0){
 		document.getElementById("div12").style.display = "none";}
-	 window.scrollTo(0,0);
+
 
         } catch(e) {}
 
