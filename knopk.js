@@ -82,6 +82,7 @@ function openForm5() {
    }
 
    xhr.send()
+ window.scrollTo(0,0);
 
 
 }
