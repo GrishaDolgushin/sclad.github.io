@@ -37,6 +37,7 @@ body {
   border: 2px solid;
   border-radius: 1px;
   transform: rotate(90deg);
+  z-index: 8;
 }
 
 .open-button4 {
@@ -54,6 +55,7 @@ body {
   border: 2px solid;
   border-radius: 1px;
   transform: rotate(90deg);
+  z-index: 8;
 }
 
 .open-button5 {
@@ -70,6 +72,7 @@ body {
   border: 2px solid;
   border-radius: 1px;
   transform: rotate(90deg);
+  z-index: 8;
 }
 
 .open-button6 {
