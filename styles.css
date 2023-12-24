@@ -262,14 +262,14 @@ body {
   transform: rotate(90deg);
 }
 
-.open-button19 {
+.open-button18 {
   color: black;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 2000px;
+  top: 2015px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -280,7 +280,7 @@ body {
   z-index: 90;
 }
 
-.open-button18 {
+.open-button19 {
   color: black;
   font-size: 15px;
   font-weight: bold;
