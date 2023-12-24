@@ -1,5 +1,6 @@
 // Функция окрывающая форму
 function openForm5() {
+	window.scrollTo(0,0);
     document.getElementById("myForm1").style.display = "block";
 	var app = "https://script.google.com/macros/s/AKfycbwhus9h6RC8Zc2g1DCXYYyLmagKu8-LN3xJwlUEbSPf8An5GFDEkdc0yyU8xo9ASVVaTg/exec",
 	output = '',
@@ -72,7 +73,6 @@ function openForm5() {
         myInput12.value = result [22];
 		if (myInput12.value == 0){
 		document.getElementById("div12").style.display = "none";}
-	window.scrollTo(0,0);
 
         } catch(e) {}
 
