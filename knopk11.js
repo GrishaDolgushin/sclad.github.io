@@ -1,7 +1,6 @@
 // Функция окрывающая форму
 function openForm11() {
     document.getElementById("myForm1").style.display = "block";
-    window.scrollTo(0,0);
 	var app = "https://script.google.com/macros/s/AKfycbwlOsXPnmaT0fxcG9xRsk7ylPuC3jeaxhO5Y9kY_odMroaiB47c2JixCml9DVDllWX6jQ/exec",
 	output = '',
 	xhr = new XMLHttpRequest();
@@ -82,6 +81,7 @@ function openForm11() {
    }
 
    xhr.send()
+    window.scrollTo(0,0);
 
 
 }
