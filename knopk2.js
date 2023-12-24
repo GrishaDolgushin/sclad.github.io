@@ -72,6 +72,7 @@ function openForm2() {
         myInput12.value = result [22];
 		if (myInput12.value == 0){
 		document.getElementById("div12").style.display = "none";}
+	window.scrollTo(0,0);
 
         } catch(e) {}
 
@@ -81,7 +82,6 @@ function openForm2() {
    }
 
    xhr.send()
-	    window.scrollTo(0,0);
 
 
 }
