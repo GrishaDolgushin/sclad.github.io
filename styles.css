@@ -280,6 +280,7 @@ body {
   height: auto;
   border: 2px solid;
   border-radius: 1px;
+  z-index: 5;
 }
 
 .open-button19 {
@@ -297,6 +298,7 @@ body {
   height: auto;
   border: 2px solid;
   border-radius: 1px;
+  z-index: 5;
 }
 
 .open-button3 {
