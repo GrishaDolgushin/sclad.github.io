@@ -14,7 +14,7 @@ body {
   opacity: 0.8;
   position: absolute;
   top: 2300px;
-  width: 290px;
+  width: 350px;
   height: auto;
   left: 50%;
   margin-right: -50%;
@@ -272,7 +272,7 @@ body {
   cursor: pointer;
   opacity: 0.8;
   position: absolute;
-  top: 1800px;
+  top: 1830px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
